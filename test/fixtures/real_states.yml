@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: {
+  name: "1",
+  type_col: "1",
+  city: "Mty",
+  country: "Mexico"
+}
+# column: value
+#
+two: {
+  name: "2",
+  type_col: "2",
+  city: "Chicago",
+  country: "USA"
+  }
+three: {
+  name: "3",
+  type_col: "3",
+  city: "Houston",
+  country: "USA"
+  }
+# column: value

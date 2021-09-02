@@ -1,0 +1,277 @@
+Started PUT "/real_states/3/update" for ::1 at 2021-09-01 22:17:32 -0500
+Processing by RealStatesController#update as */*
+  Parameters: {"real_state"=>{"name"=>"33333", "type_col"=>"typecol3", "city"=>"Mty", "country"=>"Mexico"}, "id"=>"3"}
+  [1m[36mRealState Load (0.3ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states` WHERE `real_states`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:33:in `update'
+Completed 500 Internal Server Error in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 957)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/real_states_controller.rb:36:in `update'
+Started PUT "/real_states/3/update" for ::1 at 2021-09-01 22:23:01 -0500
+Processing by RealStatesController#update as */*
+  Parameters: {"real_state"=>{"name"=>"33333", "type_col"=>"typecol3", "city"=>"Mty", "country"=>"Mexico"}, "id"=>"3"}
+  [1m[36mRealState Load (0.3ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states` WHERE `real_states`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:35:in `update'
+Completed 500 Internal Server Error in 12ms (Views: 0.2ms | ActiveRecord: 3.6ms | Allocations: 3746)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/real_states_controller.rb:43:in `update'
+Started GET "/real_states/list" for ::1 at 2021-09-01 22:23:12 -0500
+Processing by RealStatesController#index as */*
+  [1m[36mRealState Load (0.3ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states`[0m
+  ↳ app/controllers/real_states_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms | Allocations: 1122)
+
+
+Started PUT "/real_states/3/update" for ::1 at 2021-09-01 22:23:35 -0500
+Processing by RealStatesController#update as */*
+  Parameters: {"real_state"=>{"name"=>"33333", "type_col"=>"typecol3", "city"=>"Mty", "country"=>"Mexico"}, "id"=>"3"}
+  [1m[36mRealState Load (0.2ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states` WHERE `real_states`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:35:in `update'
+Completed 500 Internal Server Error in 10ms (Views: 0.1ms | ActiveRecord: 3.3ms | Allocations: 3747)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/real_states_controller.rb:43:in `update'
+Started PUT "/real_states/3/update" for ::1 at 2021-09-01 22:24:03 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/real_states/3/update"):
+  
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started PUT "/real_states/3/update" for ::1 at 2021-09-01 22:24:22 -0500
+Processing by RealStatesController#update as */*
+  Parameters: {"real_state"=>{"name"=>"45455", "type_col"=>"typecol3", "city"=>"Mty", "country"=>"Mexico"}, "id"=>"3"}
+  [1m[36mRealState Load (0.3ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states` WHERE `real_states`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:35:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/real_states_controller.rb:38:in `update'
+  [1m[36mRealState Update (0.4ms)[0m  [1m[33mUPDATE `real_states` SET `real_states`.`name` = '45455' WHERE `real_states`.`id` = 3[0m
+  ↳ app/controllers/real_states_controller.rb:38:in `update'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/real_states_controller.rb:38:in `update'
+Completed 500 Internal Server Error in 18ms (Views: 0.2ms | ActiveRecord: 7.4ms | Allocations: 5959)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/real_states_controller.rb:43:in `update'
+Started GET "/real_states/list" for ::1 at 2021-09-01 22:24:27 -0500
+Processing by RealStatesController#index as */*
+  [1m[36mRealState Load (0.4ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states`[0m
+  ↳ app/controllers/real_states_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1120)
+
+
+Started GET "/real_states/remove/2" for ::1 at 2021-09-01 22:25:06 -0500
+Processing by RealStatesController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mRealState Load (0.2ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states` WHERE `real_states`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:23:in `destroy'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 1418)
+
+
+Started GET "/real_states/remove/3" for ::1 at 2021-09-01 22:25:09 -0500
+Processing by RealStatesController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mRealState Load (0.3ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states` WHERE `real_states`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/real_states_controller.rb:26:in `destroy'
+  [1m[36mRealState Destroy (0.3ms)[0m  [1m[31mDELETE FROM `real_states` WHERE `real_states`.`id` = 3[0m
+  ↳ app/controllers/real_states_controller.rb:26:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/real_states_controller.rb:26:in `destroy'
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.8ms | Allocations: 4951)
+
+
+Started GET "/real_states/remove/3" for ::1 at 2021-09-01 22:25:13 -0500
+Processing by RealStatesController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mRealState Load (0.3ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states` WHERE `real_states`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:23:in `destroy'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 660)
+
+
+Started POST "/real_states/add" for ::1 at 2021-09-01 22:25:18 -0500
+Processing by RealStatesController#create as */*
+  Parameters: {"real_state"=>{"name"=>"222", "type_col"=>"typecol2", "city"=>"Mty", "country"=>"Mexico"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[36mRealState Create (6.0ms)[0m  [1m[32mINSERT INTO `real_states` (`name`, `type_col`, `city`, `country`) VALUES ('222', 'typecol2', 'Mty', 'Mexico')[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 7.1ms | Allocations: 2407)
+
+
+Started POST "/real_states/add" for ::1 at 2021-09-01 22:25:18 -0500
+Processing by RealStatesController#create as */*
+  Parameters: {"real_state"=>{"name"=>"222", "type_col"=>"typecol2", "city"=>"Mty", "country"=>"Mexico"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[36mRealState Create (0.3ms)[0m  [1m[32mINSERT INTO `real_states` (`name`, `type_col`, `city`, `country`) VALUES ('222', 'typecol2', 'Mty', 'Mexico')[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 2391)
+
+
+Started PUT "/real_states/7/update" for ::1 at 2021-09-01 22:25:29 -0500
+Processing by RealStatesController#update as */*
+  Parameters: {"real_state"=>{"name"=>"45455", "type_col"=>"typecol3", "city"=>"Mty", "country"=>"Mexico"}, "id"=>"7"}
+  [1m[36mRealState Load (0.3ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states` WHERE `real_states`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:35:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/real_states_controller.rb:38:in `update'
+  [1m[36mRealState Update (0.9ms)[0m  [1m[33mUPDATE `real_states` SET `real_states`.`name` = '45455', `real_states`.`type_col` = 'typecol3' WHERE `real_states`.`id` = 7[0m
+  ↳ app/controllers/real_states_controller.rb:38:in `update'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/real_states_controller.rb:38:in `update'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 3118)
+
+
+Started PUT "/real_states/7/update" for ::1 at 2021-09-01 22:25:32 -0500
+Processing by RealStatesController#update as */*
+  Parameters: {"real_state"=>{"name"=>"45455", "type_col"=>"typecol3", "city"=>"Mty", "country"=>"Mexico"}, "id"=>"7"}
+  [1m[36mRealState Load (0.3ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states` WHERE `real_states`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:35:in `update'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 884)
+
+
+Started PUT "/real_states/9/update" for ::1 at 2021-09-01 22:25:38 -0500
+Processing by RealStatesController#update as */*
+  Parameters: {"real_state"=>{"name"=>"45455", "type_col"=>"typecol3", "city"=>"Mty", "country"=>"Mexico"}, "id"=>"9"}
+  [1m[36mRealState Load (0.3ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states` WHERE `real_states`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:35:in `update'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 670)
+
+
+Started POST "/real_states/add" for ::1 at 2021-09-01 22:26:49 -0500
+  
+NoMethodError (undefined method `validate_uniqueness' for #<Class:0x00007fba95b72288>
+Did you mean?  validates_uniqueness_of):
+  
+app/models/real_state.rb:2:in `<class:RealState>'
+app/models/real_state.rb:1:in `<main>'
+Started POST "/real_states/add" for ::1 at 2021-09-01 22:27:03 -0500
+  
+NoMethodError (undefined method `validate_uniqueness' for #<Class:0x00007fba95b72288>
+Did you mean?  validates_uniqueness_of):
+  
+app/models/real_state.rb:2:in `<class:RealState>'
+app/models/real_state.rb:1:in `<main>'
+Started POST "/real_states/add" for ::1 at 2021-09-01 22:28:00 -0500
+Processing by RealStatesController#create as */*
+  Parameters: {"real_state"=>{"name"=>"225652", "type_col"=>"typecol2", "city"=>"Mty", "country"=>"Mexico"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[36mRealState Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `real_states` WHERE `real_states`.`name` = '225652' LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[36mRealState Create (0.4ms)[0m  [1m[32mINSERT INTO `real_states` (`name`, `type_col`, `city`, `country`) VALUES ('225652', 'typecol2', 'Mty', 'Mexico')[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 5.3ms | Allocations: 6259)
+
+
+Started POST "/real_states/add" for ::1 at 2021-09-01 22:28:02 -0500
+Processing by RealStatesController#create as */*
+  Parameters: {"real_state"=>{"name"=>"225652", "type_col"=>"typecol2", "city"=>"Mty", "country"=>"Mexico"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[36mRealState Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `real_states` WHERE `real_states`.`name` = '225652' LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 5498)
+
+
+Started POST "/real_states/add" for ::1 at 2021-09-01 22:28:06 -0500
+Processing by RealStatesController#create as */*
+  Parameters: {"real_state"=>{"name"=>"225652", "type_col"=>"typecol2", "city"=>"Mty", "country"=>"Mexico"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[36mRealState Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `real_states` WHERE `real_states`.`name` = '225652' LIMIT 1[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/real_states_controller.rb:10:in `create'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 3097)
+
+
+Started GET "/real_states/list" for ::1 at 2021-09-01 22:43:18 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RealStatesController#index as */*
+  [1m[36mRealState Load (0.4ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states`[0m
+  ↳ app/controllers/real_states_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 5.0ms | ActiveRecord: 4.4ms | Allocations: 4663)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('439626232162824945', 0)[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('439626232162824945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (31.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `realstate_test`[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE `realstate_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (11.5ms)[0m  [1m[35mDROP TABLE IF EXISTS `real_states` CASCADE[0m
+  [1m[35m (23.8ms)[0m  [1m[35mCREATE TABLE `real_states` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `type_col` varchar(255), `city` varchar(255), `country` varchar(255)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20210902021238)[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2021-09-02 03:50:24.998695', '2021-09-02 03:50:24.998695')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE `ar_internal_metadata` SET `ar_internal_metadata`.`value` = 'test', `ar_internal_metadata`.`updated_at` = '2021-09-02 03:50:25.004430' WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('schema_sha1', '979098b16df75047cc89a7f635509a61be2d1c1e', '2021-09-02 03:50:25.010294', '2021-09-02 03:50:25.010294')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/real_states/list" for ::1 at 2021-09-01 23:13:12 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RealStatesController#index as */*
+  [1m[36mRealState Load (0.4ms)[0m  [1m[34mSELECT `real_states`.* FROM `real_states`[0m
+  ↳ app/controllers/real_states_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 7.4ms | ActiveRecord: 3.5ms | Allocations: 4715)
+
+
