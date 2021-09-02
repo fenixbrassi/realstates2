@@ -1,24 +1,22 @@
-# README
+Ruby V: ruby 2.7.2p137
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Rails V: Rails 6.0.4.1
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+Step 1)
 
-* Database creation
+	Create The rails application:
+		rails new realstate --api --database=mysql
 
-* Database initialization
+Step 2)
+	2.1) Config the database credentials (database.yml)
+	2.2) Create the Datebase
+		bundle exec rake db:create
 
-* How to run the test suite
+Step 3) 
 
-* Services (job queues, cache servers, search engines, etc.)
+	Run the migrations 
 
-* Deployment instructions
-
-* ...
+		bundle exec rake db:migrate
