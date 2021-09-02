@@ -1,0 +1,4 @@
+
+tmp/cache/bootsnap/compile-cache/*
+tmp/*
+log/*
